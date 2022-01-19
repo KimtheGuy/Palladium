@@ -26,18 +26,12 @@
 <a class="blooketTopBar" href="/">Blooket</a>
 <div class="joinAGame">Join a Game</div>
 <div class="TopBarLogin"><a class="LoginColoring" href="https://blooket.com/login">Login</a></div></div>
-<form class="container-main" method="POST" action="/service/gateway">
-  <center>
-  <span class="title">Palladium</span>
-  </center>
-  <input required oninvalid="(() => {this.setCustomValidity(' ');document.getElementById('error-disc').style.display = 'block'})()" onchange="" name="url" maxlength="250" id="url-input" placeholder="Search or Enter Url" list="urls"><button id="initiate">Go</button><br><p id="error-disc">Please Enter a Search Term or Url</p><br>
-  <center>
-    <a href="/service/gateway/?url=https://www.google.com/%22%3E<i class="fab fa-google" style="color: white;font-size:30px;"></i></a>
-    <a href="/service/gateway/?url=https://youtube.com/%22%3E<i class="fab fa-youtube" style="color: red;font-size:30px;"></i></a>
-    <a href="/service/gateway/?url=https://discord.com/app%22%3E<i class="fab fa-discord" style="color: #5165f6;font-size:30px;"></i></a>
-    <a href="/service/gateway/?url=https://reddit.com/%22%3E<i class="fab fa-reddit" style="color: #f24100;font-size:30px;"></i></a>
-    <a href="/service/gateway/?url=https://twitch.tv/%22%3E<i class="fab fa-twitch" style="color: #8a43f2;font-size:30px;"></i></a>
-  </center>
+    <div class="page-container">
+      <form class="container-main" method="POST" action="/service/gateway">
+        <div class="titleText">Blooket</div>
+        <input required style="margin: right;" class="gameID" oninvalid="(() => {this.setCustomValidity(' ');document.getElementById('error-disc').style.display = 'block'})()" name="url" maxlength="250" id="url-input"  placeholder="Game ID">
+        <input class="joinButton" type="submit" style="color: white;" value="">
+    </div>
       </form>
     </div>
   </body>
